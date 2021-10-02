@@ -1,2 +1,2 @@
 # missionaries-and-cannibals
-C++ implementation of the Missionaries and Cannibals problem
+Python3 implementation of the Missionaries and Cannibals problem
