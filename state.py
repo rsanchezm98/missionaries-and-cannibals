@@ -43,3 +43,16 @@ class State:
   def print(self):
     print(self.get_state())
 
+def Node:
+    def __init__(self, state):
+        self.state = state
+        self.parent = False
+
+    def set_parent(self, parent):
+        self.parent = parent
+    
+    def get_parent(self):
+        return self.parent
+    
+    def state(self):
+        return self.state

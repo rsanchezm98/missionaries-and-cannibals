@@ -1,9 +1,14 @@
 from algorithms import bfs
 from state import State
+from state import Node
+
+
 
 def print_path(path):
-    for i in range (0,len(path)):
-        print(i + " state: " + path[i].get_state())
+    counter = 0
+    for node in path:
+        counter = counter + 1
+        print("Step: ", counter, ": ", node.state().get_state())
 
 def main():
     print('Welcome to missionaries and cannibals problem solving...')
@@ -18,8 +23,8 @@ def main():
         state_space[i].print()
 
 
-    solution = bfs(origin_state)
-    solution.print()
+    path = bfs(Node(origin_state, "NOT DEFINED"))
+    print(path)
 
 
 if __name__ == "__main__":
