@@ -1,8 +1,5 @@
 from algorithms import bfs
 from state import State
-from state import Node
-
-
 
 def print_path(path):
     counter = 0
@@ -18,12 +15,7 @@ def main():
     origin_state.print()
     print("************************")
 
-    state_space = origin_state.space_state()
-    for i in range (0, len(state_space)):
-        state_space[i].print()
-
-
-    path = bfs(Node(origin_state, "NOT DEFINED"))
+    path = bfs(origin_state)
     print(path)
 
 

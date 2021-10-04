@@ -5,6 +5,8 @@ class State:
     self.missionaries = missionaries
     self.cannibals = cannibals
     self.boat_side = boat_side
+    self.parent = False
+    self.unique_id = None
   
   def get_state(self):
     return (self.missionaries, self.cannibals, self.boat_side)
@@ -43,16 +45,14 @@ class State:
   def print(self):
     print(self.get_state())
 
-def Node:
-    def __init__(self, state):
-        self.state = state
-        self.parent = False
-
-    def set_parent(self, parent):
-        self.parent = parent
-    
-    def get_parent(self):
-        return self.parent
-    
-    def state(self):
-        return self.state
+  def set_parent(self, parent):
+    self.parent = parent
+  
+  def get_parent(self):
+    return self.parent
+  
+  def set_unique_id(self, id):
+    self.unique_id = id
+  
+  def get_unique_id(self):
+    return self.unique_id
