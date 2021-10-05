@@ -5,7 +5,7 @@ def print_path(path):
     counter = 0
     for node in path:
         counter = counter + 1
-        print("Step: ", counter, ": ", node.state().get_state())
+        print("Step: ", counter, ": ", node.get_state())
 
 def main():
     print('Welcome to missionaries and cannibals problem solving...')
@@ -16,7 +16,8 @@ def main():
     print("************************")
 
     path = bfs(origin_state)
-    print(path)
+    print_path(path)
+        
 
 
 if __name__ == "__main__":
